@@ -2,15 +2,17 @@ export default function About() {
   const items = [
     {
       icon: "groups",
-      title: "UXID Member",
+      title: "Community Public Relation at UXID",
       description: "Active contributor to Indonesia's largest UX community. Sharing knowledge and organizing local meetups.",
-      linkText: "VIEW_PROFILE"
+      linkText: "VIEW_PROFILE",
+      link: "https://www.instagram.com/ux_indonesia"
     },
     {
       icon: "school",
       title: "Mentor at Dealls.com",
       description: "Helping junior designers navigate their career paths and improving their technical design skills.",
-      linkText: "VIEW_MENTORSHIP"
+      linkText: "VIEW_MENTORSHIP",
+      link: "https://dealls.com/"
     }
   ];
 
@@ -25,7 +27,7 @@ export default function About() {
             </div>
             <h4 className="text-xl font-bold mb-2">{item.title}</h4>
             <p className="text-gray-600 mb-4 pr-12">{item.description}</p>
-            <a className="text-sm font-mono font-bold underline decoration-2 underline-offset-2 hover:text-primary" href="#">
+            <a className="text-sm font-mono font-bold underline decoration-2 underline-offset-2 hover:text-primary" href={item.link || "#"} target="_blank" rel="noopener noreferrer">
               {item.linkText}
             </a>
           </div>
