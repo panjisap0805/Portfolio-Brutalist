@@ -12,7 +12,7 @@ export default function About() {
       title: "Mentor at Dealls.com",
       description: "Helping junior designers navigate their career paths and improving their technical design skills.",
       linkText: "VIEW_MENTORSHIP",
-      link: "https://dealls.com/"
+      link: "https://dealls.com/mentoring/panji-saputro-865"
     }
   ];
 
