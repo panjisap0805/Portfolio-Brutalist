@@ -1,16 +1,44 @@
-export default function Navbar() {
+import Link from 'next/link';
+
+export default function Navbar({ backLink, nextLink }) {
+  const isProject = backLink || nextLink;
+
   return (
     <nav className="fixed top-0 w-full z-50 bg-background-light border-b-2 border-black">
       <div className="max-w-[1440px] mx-auto flex justify-between items-stretch">
-        <div className="flex items-center px-6 py-5 border-r-2 border-black bg-black text-white hover:bg-primary transition-colors duration-300">
-          <a className="text-xl font-bold tracking-tighter uppercase" href="#">PANJI SAPUTRO</a>
-        </div>
-        <div className="hidden md:flex items-stretch font-mono text-sm">
-          <a className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="#work">[WORK]</a>
-          <a className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="#process">[PROCESS]</a>
-          <a className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="#about">[ABOUT]</a>
-          <a className="flex items-center px-6 border-l-2 border-black bg-primary/10 hover:bg-primary hover:text-white transition-all duration-200 font-bold text-primary" href="#contact">[CONTACT]</a>
-        </div>
+        {!isProject ? (
+          <div className="flex items-center px-6 py-5 border-r-2 border-black bg-black text-white hover:bg-primary transition-colors duration-300">
+            <Link className="text-xl font-bold tracking-tighter uppercase" href="/">PANJI SAPUTRO</Link>
+          </div>
+        ) : (
+          <div className="flex items-center px-6 py-5 border-r-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-300 gap-3">
+            <span className="material-icons font-bold text-3xl">grid_view</span>
+            <Link className="text-xl font-bold tracking-tighter uppercase hidden sm:block" href="/">PANJI SAPUTRO</Link>
+          </div>
+        )}
+        
+        {!isProject ? (
+          <div className="hidden md:flex items-stretch font-mono text-sm">
+            <Link className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="/#work">[WORK]</Link>
+            <Link className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="/#process">[PROCESS]</Link>
+            <Link className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="/#about">[ABOUT]</Link>
+            <Link className="flex items-center px-6 border-l-2 border-black bg-primary/10 hover:bg-primary hover:text-white transition-all duration-200 font-bold text-primary" href="/#contact">[CONTACT]</Link>
+          </div>
+        ) : (
+          <div className="hidden md:flex items-stretch font-mono text-sm">
+            {backLink && (
+              <Link href={backLink} className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200 font-bold">
+                [← BACK]
+              </Link>
+            )}
+            {nextLink && (
+              <Link href={nextLink} className="flex items-center px-6 border-l-2 border-black bg-primary text-white hover:bg-black transition-all duration-200 font-bold">
+                [NEXT_PROJECT →]
+              </Link>
+            )}
+          </div>
+        )}
+        
         <button className="md:hidden flex items-center px-6 border-l-2 border-black">
           <span className="material-icons">menu</span>
         </button>

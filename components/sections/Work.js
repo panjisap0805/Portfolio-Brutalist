@@ -1,4 +1,6 @@
-function CaseStudy({ number, tag, tags, title, description, imageSrc, alt }) {
+import Link from 'next/link';
+
+function CaseStudy({ number, tag, tags, title, description, imageSrc, alt, link }) {
   return (
     <article className="group relative grid grid-cols-1 lg:grid-cols-12 border-b-2 border-black last:border-b-0">
       <div className="lg:col-span-1 bg-gray-100 border-r-2 border-black flex items-center justify-center py-6 lg:py-0">
@@ -18,9 +20,15 @@ function CaseStudy({ number, tag, tags, title, description, imageSrc, alt }) {
         <p className="text-lg text-gray-600 font-medium mb-8 max-w-xl">
           {description}
         </p>
-        <a className="inline-flex items-center gap-3 font-mono font-bold text-lg hover:underline decoration-2 underline-offset-4 decoration-primary" href="#">
-          READ_CASE_STUDY <span className="material-icons text-primary">arrow_forward</span>
-        </a>
+        {link ? (
+          <Link href={link} className="inline-flex items-center gap-3 font-mono font-bold text-lg hover:underline decoration-2 underline-offset-4 decoration-primary">
+            READ_CASE_STUDY <span className="material-icons text-primary">arrow_forward</span>
+          </Link>
+        ) : (
+          <a className="inline-flex items-center gap-3 font-mono font-bold text-lg hover:underline decoration-2 underline-offset-4 decoration-primary" href="#">
+            READ_CASE_STUDY <span className="material-icons text-primary">arrow_forward</span>
+          </a>
+        )}
       </div>
       <div className="lg:col-span-4 relative h-64 lg:h-auto overflow-hidden border-t-2 lg:border-t-0 border-black lg:border-l-0">
         <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-all"></div>
@@ -40,6 +48,7 @@ export default function Work() {
       description: "Revolutionizing micro-transactions for the unbanked. We reduced transaction time by 40% through a streamlined, gesture-based interface.",
       imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCwMesRAWTO-yOefSsEvtl1Y-9Sj32l01ZyDRYqRaXf350-o9OYSC-PpXK1nUZf54HLMNjkiGpDyRkr8hxuo2wLhcoBOGzi-His8xoVt5PFvUkrrjMhXZP1H4pvip2R4WRb8sBVSiyHhvxy7vqWa3nivh_wMcXftqVHjilQ0h9wT2xgLEB_tgQO0aIfXAzJaogABkpSdnlD240Dba6TBvbhDJEpBi3SwWWGNBgAObQtH0rOxUs9ZWFwUmt3EezA7jIVya5oC-09sv0i",
       alt: "MDS Cash App",
+      link: "/work/mds-cash"
     },
     {
       number: "02",
