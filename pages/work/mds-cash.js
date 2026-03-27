@@ -7,6 +7,7 @@ import ProjectProcess from "../../components/project/ProjectProcess";
 import ProjectInsights from "../../components/project/ProjectInsights";
 import ProjectShowcase from "../../components/project/ProjectShowcase";
 import ProjectImpact from "../../components/project/ProjectImpact";
+import ProjectNavigation from "../../components/project/ProjectNavigation";
 
 export default function MDSCash() {
   const projectData = {
@@ -54,11 +55,17 @@ export default function MDSCash() {
       detailImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6hz92JhgWBkJVVIeUHysLgVBhqSc1jJfX-Q_pxqIT1LF6tactG_JsrBuQfewPf8ZVaYofGy3e_MXRgrCvoC0JIZHEi7BgCoqVuOH-DaePa-71V39KOUrSbC2DTjCLbCjvppCOPoW64b3fQo1I52l42Xs3XQc5pbUSK98SHGkgEyDePy3IxzNE9oi9F-RoZMdBUeyCKc3nmpE8iGfP1zOXAyPgi4c2FFwuRj7xutQZCNl704XTcCTtZdBbMy217YzRso9cNNjFBmae"
     },
     impact: {
-      csatScore: "4.2",
-      csatSubtitle: "Significant increase in user satisfaction when usability testing.",
-      efficiencyGain: "+40%",
-      efficiencySubtitle: "Faster loan processing times achieved within the first quarter.",
+      stat1Value: "4.2",
+      stat1Suffix: "/5.0",
+      stat1Subtitle: "Significant increase in user satisfaction when usability testing.",
+      stat2Value: "+40%",
+      stat2Subtitle: "Faster loan processing times achieved within the first quarter.",
       constraintsText: 'We were unable to fully integrate with the legacy banking core due to API restrictions. The solution relies on a middleware layer that syncs nightly, meaning "real-time" data has a slight latency we had to disclose in the UI.'
+    },
+    nextProject: {
+      tag: "CASE_STUDY_02",
+      title: "WAREHOUSE INTERNAL<br className='hidden md:block'/> FREIGHT",
+      link: "/work/warehouse-internal-freight"
     }
   };
 
@@ -91,12 +98,14 @@ export default function MDSCash() {
           detailImage={projectData.showcase.detailImage}
         />
         <ProjectImpact
-          csatScore={projectData.impact.csatScore}
-          csatSubtitle={projectData.impact.csatSubtitle}
-          efficiencyGain={projectData.impact.efficiencyGain}
-          efficiencySubtitle={projectData.impact.efficiencySubtitle}
+          stat1Value={projectData.impact.stat1Value}
+          stat1Suffix={projectData.impact.stat1Suffix}
+          stat1Subtitle={projectData.impact.stat1Subtitle}
+          stat2Value={projectData.impact.stat2Value}
+          stat2Subtitle={projectData.impact.stat2Subtitle}
           constraintsText={projectData.impact.constraintsText}
         />
+        <ProjectNavigation nextProject={projectData.nextProject} />
       </Layout>
     </>
   );

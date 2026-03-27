@@ -18,7 +18,7 @@ export default function WarehouseInternalFreight() {
     metadata: [
       { label: "Role", value: "UI/UX Designer" },
       { label: "Timeline", value: "4 Weeks" },
-      { label: "Collaboration", value: "Steven" },
+      { label: "Collaboration", value: "Steven (PM)" },
       { label: "Platform", value: "Internal Web App" }
     ],
     context: {
@@ -54,11 +54,16 @@ export default function WarehouseInternalFreight() {
       detailImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6hz92JhgWBkJVVIeUHysLgVBhqSc1jJfX-Q_pxqIT1LF6tactG_JsrBuQfewPf8ZVaYofGy3e_MXRgrCvoC0JIZHEi7BgCoqVuOH-DaePa-71V39KOUrSbC2DTjCLbCjvppCOPoW64b3fQo1I52l42Xs3XQc5pbUSK98SHGkgEyDePy3IxzNE9oi9F-RoZMdBUeyCKc3nmpE8iGfP1zOXAyPgi4c2FFwuRj7xutQZCNl704XTcCTtZdBbMy217YzRso9cNNjFBmae"
     },
     impact: {
-      csatScore: "ZERO",
-      csatSubtitle: "Missing items reported post-implementation.",
-      efficiencyGain: "Paper Reduced",
-      efficiencySubtitle: "Scan vs Type workflow drastically increased throughput.",
+      stat1Icon: "inventory_2",
+      stat1Label: "ACCURACY",
+      stat1Value: "ZERO",
+      stat1Subtitle: "Missing items reported post-implementation.",
+      stat2Icon: "bolt",
+      stat2Label: "EFFICIENCY",
+      stat2Value: "Paper Reduced",
+      stat2Subtitle: "Scan vs Type workflow drastically increased throughput.",
       feedbackQuote: "Highly Beneficial",
+      feedbackAuthor: "Amen, Head of Warehouse",
       feedbackSentiment: "POSITIVE SENTIMENT"
     }
   };
@@ -92,11 +97,16 @@ export default function WarehouseInternalFreight() {
           detailImage={projectData.showcase.detailImage}
         />
         <ProjectImpact
-          csatScore={projectData.impact.csatScore}
-          csatSubtitle={projectData.impact.csatSubtitle}
-          efficiencyGain={projectData.impact.efficiencyGain}
-          efficiencySubtitle={projectData.impact.efficiencySubtitle}
+          stat1Icon={projectData.impact.stat1Icon}
+          stat1Label={projectData.impact.stat1Label}
+          stat1Value={projectData.impact.stat1Value}
+          stat1Subtitle={projectData.impact.stat1Subtitle}
+          stat2Icon={projectData.impact.stat2Icon}
+          stat2Label={projectData.impact.stat2Label}
+          stat2Value={projectData.impact.stat2Value}
+          stat2Subtitle={projectData.impact.stat2Subtitle}
           feedbackQuote={projectData.impact.feedbackQuote}
+          feedbackAuthor={projectData.impact.feedbackAuthor}
           feedbackSentiment={projectData.impact.feedbackSentiment}
         />
       </Layout>
