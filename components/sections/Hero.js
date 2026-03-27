@@ -15,11 +15,11 @@ export default function Hero() {
           With <span className="bg-primary/20 px-1 font-bold">4+ years of experience</span> crafting digital products. I don&apos;t just design interfaces; I engineer interactions and bridge the critical gap between creative vision and deployment-ready code.
         </p>
         <div className="flex flex-wrap gap-4">
-          <a className="group bg-black text-white px-8 py-4 text-lg font-bold border-2 border-black hover:bg-primary hover:border-primary transition-all duration-200 flex items-center gap-2 brutalist-shadow-primary active:translate-y-1 active:shadow-none" href="#work">
+          <a className="group bg-black text-white font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border brutalist-shadow-primary hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0_0_#0f49bd] transition-all flex items-center gap-2" href="#work">
             [EXPLORE_PROJECTS]
             <span className="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>
-          <a className="bg-white text-black px-8 py-4 text-lg font-bold border-2 border-black hover:bg-gray-50 transition-all duration-200 flex items-center gap-2 active:translate-y-[2px]" href="#resume">
+          <a className="group bg-white text-black font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border hover:bg-gray-50 transition-all flex items-center gap-2" href="#resume">
             DOWNLOAD_CV
             <span className="material-icons text-sm">download</span>
           </a>

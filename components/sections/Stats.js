@@ -19,7 +19,7 @@ export default function Stats() {
         </div>
         <div className="p-8 border-b-2 md:border-b-0 md:border-r-2 lg:border-t-2 border-black hover:bg-gray-50 transition-colors group">
           <div className="text-sm font-mono text-gray-500 mb-2 group-hover:text-black">DESIGN_SYSTEMS</div>
-          <div className="text-5xl lg:text-6xl font-bold text-black mb-2 group-hover:text-primary transition-colors">3+</div>
+          <div className="text-5xl lg:text-6xl font-bold text-black mb-2 group-hover:text-primary transition-colors">8+</div>
           <div className="font-bold uppercase tracking-tight">Scalable Libraries Built</div>
         </div>
         <div className="p-8 border-b-2 md:border-b-0 lg:border-r-2 lg:border-t-2 border-black hover:bg-gray-50 transition-colors group">
