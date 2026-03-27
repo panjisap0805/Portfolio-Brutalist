@@ -5,7 +5,7 @@ export default function CTA({ isProject, nextLink, nextProjectName }) {
   const showNextProject = isProject && !isLastProject;
 
   return (
-    <section className="bg-background-light text-black py-16 mb-16 mt-16 lg:py-24 relative flex flex-col items-center justify-center">
+    <section className="bg-background-light text-black py-16 mb-16 lg:py-24 relative flex flex-col items-center justify-center">
       <div className="relative z-10 flex flex-col items-center w-full max-w-5xl mx-auto px-6">
         <p className="font-mono text-xs md:text-sm tracking-[1.4px] uppercase text-black md:mb-8 text-center font-bold">
           Are you ready?

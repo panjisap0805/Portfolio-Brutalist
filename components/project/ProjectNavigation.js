@@ -4,7 +4,10 @@ export default function ProjectNavigation({ nextProject }) {
   if (!nextProject) return null;
 
   return (
-    <section className="bg-white border-t-2 border-black py-16 md:py-24">
+    <section className="bg-white border-b-2 py-16 md:py-16">
+      <p className="font-mono text-xs md:text-sm tracking-[1.4px] uppercase text-black md:mb-4 text-center font-bold">
+        NEXT_PROJECT
+      </p>
       <div className="max-w-5xl mx-auto px-6 flex flex-col items-center text-center">
         <div className="inline-block px-3 py-1 border-2 border-black rounded-full text-xs font-mono font-bold mb-6 bg-primary text-white brutalist-shadow">
           {nextProject.tag}
@@ -13,7 +16,7 @@ export default function ProjectNavigation({ nextProject }) {
           className="text-4xl md:text-6xl lg:text-[5rem] font-bold leading-[1.1] tracking-tighter uppercase mb-12"
           dangerouslySetInnerHTML={{ __html: nextProject.title }}
         />
-        
+
         <div className="flex flex-col sm:flex-row gap-6 items-center justify-center w-full">
           <Link href="/" className="group bg-white text-black font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border hover:bg-gray-50 transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
             [HOME]
