@@ -57,7 +57,8 @@ export default function Work() {
       title: "Jakmall Warehouse",
       description: "A comprehensive warehouse management system designed for high-volume inventory tracking. Improved picker accuracy by 99% with a new visual scanning system.",
       imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuBWynDAb3G0aibdcro6Mb5mPfSRsKjz1EpucKEJcqk4UhVqx9zYu2Nntd84GFWd8h_9oipslLzS9yHYPxHrKcxl-WKqS9W-FK1AKytmMt2FRUW_QX1eK2OWU2h1VWisvue970SHwybiZS4Bd_HTGmonM9pwDT7gc3hpNlWapkLkza9CzTIMGDQDYIhG77mcCnWP2pCIDjxuSyrT9mlXZRZAOAU3DrCelVc-TvTj94hvOyMOamFfypgGENvUSIt5pzW0rlhanajEZeCe",
-      alt: "Jakmall Warehouse"
+      alt: "Jakmall Warehouse",
+      link: "/work/warehouse-internal-freight"
     }
   ];
 

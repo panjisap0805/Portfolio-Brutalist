@@ -16,17 +16,17 @@ export default function MDSCash() {
       description: "Re-engineering the lending lifecycle for speed and clarity. Transforming manual bottlenecks into a seamless digital workflow."
     },
     metadata: [
-      { label: "Role", value: "UI/UX Designer" },
+      { label: "Role", value: "Product Designer" },
       { label: "Timeline", value: "3 Months" },
       { label: "Year", value: "2023" },
-      { label: "Platform", value: "Web App" }
+      { label: "Platform", value: "App" }
     ],
     context: {
       overview: "MDS Coop needed a digital transformation for their lending lifecycle. The goal was to automate the manual review process and provide transparency to applicants. Previously, loan officers managed everything via Excel sheets and phone calls, leading to a fragmented customer experience.",
       challenges: [
-        `Manual data entry caused a <span className="font-bold border-b-2 border-red-500 text-black">20% error rate</span>.`,
-        `Applicants had <span className="font-bold border-b-2 border-red-500 text-black">zero visibility</span> on status.`,
-        `Approval time averaged <span className="font-bold border-b-2 border-red-500 text-black">5-7 business days</span>.`
+        `Manual data entry caused a <span class="font-bold border-b-2 border-red-500 text-black">20% error rate</span>.`,
+        `Applicants had <span class="font-bold border-b-2 border-red-500 text-black">zero visibility</span> on status.`,
+        `Approval time averaged <span class="font-bold border-b-2 border-red-500 text-black">5-7 business days</span>.`
       ]
     },
     process: [
