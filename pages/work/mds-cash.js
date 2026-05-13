@@ -49,10 +49,9 @@ export default function MDSCash() {
       ]
     },
     showcase: {
-      mainImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuBT0xtEqOjkPaPlKMoSqd8BVg25vvnm0IyEyjpqEO25Q47zlFja7YbUVBGDu9xW-VZPkoTSZTHXzxbdrX1sSn2D72FS8UOgXIyh7QpccvVYYDXb4XcHE4Bjfp1v3Sb3Zen9whxtVFYeGrUDzLUKOKbX3GEE3NFn5zQMnvp1vS2nl9JK290NEFfPerYALDiWI3Ee71TN-VULuakejrJg_3ZQ-fZcpbYU3g_wNGdMXICYOv3GRxzyQV-T9GZy7WXSQjcJ-pZEa1Zlw2j9",
+      mainImage: "/asset-mdscash-final.webp",
       mainTag: "FIGMA_V_2.4",
-      mobileImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuDse3ks44zE1sdbfVe-NB1UVPJ6CU6kzvhDcdeu0b6qTrPoqS9R9UO0XE_SoDuqmHRG3bJ55hu0lie9tcypCVLVWxKWFxYPd_zAK-fD0U-3-SbXCDhpe_3t_kJ2n-p8ia0wIYY5Nlq1ZrlJ2XUnvoTTl645XOcz9ZD0XejLJPiR9mAsq9pEC2RbXMZSluQNo18s5AMaCE-iXqlbuYJtOqD036jSP4HjabLsxpeu-uu3I2O-ATPJQwFBFPT20dpms1cktsH_Ef6E5c3m",
-      detailImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6hz92JhgWBkJVVIeUHysLgVBhqSc1jJfX-Q_pxqIT1LF6tactG_JsrBuQfewPf8ZVaYofGy3e_MXRgrCvoC0JIZHEi7BgCoqVuOH-DaePa-71V39KOUrSbC2DTjCLbCjvppCOPoW64b3fQo1I52l42Xs3XQc5pbUSK98SHGkgEyDePy3IxzNE9oi9F-RoZMdBUeyCKc3nmpE8iGfP1zOXAyPgi4c2FFwuRj7xutQZCNl704XTcCTtZdBbMy217YzRso9cNNjFBmae"
+      protoImage: "/asset-mdscash-blueprint.webp"
     },
     impact: {
       stat1Value: "4.2",
@@ -93,6 +92,7 @@ export default function MDSCash() {
         />
         <ProjectShowcase
           mainImage={projectData.showcase.mainImage}
+          protoImage={projectData.showcase.protoImage}
           mainTag={projectData.showcase.mainTag}
           mobileImage={projectData.showcase.mobileImage}
           detailImage={projectData.showcase.detailImage}

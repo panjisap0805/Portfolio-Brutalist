@@ -27,7 +27,7 @@ export default function Hero() {
       </div>
       <div className="lg:col-span-4 bg-primary relative overflow-hidden flex flex-col justify-between">
         <div className="absolute inset-0 bg-primary opacity-90 mix-blend-multiply"></div>
-        <img alt="Portrait of Panji Saputro" className="absolute inset-0 w-full h-full object-cover object-top mix-blend-luminosity opacity-40 grayscale" src="/asset-panji.png" />
+        <img alt="Portrait of Panji Saputro" className="absolute inset-0 w-full h-full object-cover object-top mix-blend-luminosity opacity-40 grayscale" src="/asset-panji.webp" />
         <div className="relative z-10 p-8">
           <div className="text-white font-mono text-sm opacity-80 uppercase tracking-widest">Current_Location:</div>
           <div className="text-white text-3xl font-bold uppercase">Jakarta, ID</div>
