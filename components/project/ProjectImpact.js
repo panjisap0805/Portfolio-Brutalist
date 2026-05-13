@@ -48,16 +48,16 @@ export default function ProjectImpact({ stat1Icon = "thumb_up", stat1Label = "US
           </div>
         ) : (
           <div className="p-8 border-2 border-slate-300 rounded-lg flex flex-col justify-between min-h-[280px]">
-            <div className="flex items-center gap-2 text-slate-500">
+            <div className="flex items-center gap-2 text-slate-500 mb-4">
               <span className="material-icons">forum</span>
               <span className="font-bold uppercase text-sm">STAKEHOLDER FEEDBACK</span>
             </div>
             <div>
-              <p className="text-lg md:text-xl font-bold leading-relaxed mb-4">
+              <p className="text-lg md:text-xl font-bold leading-relaxed mb-2">
                 "{feedbackQuote}"
               </p>
               {feedbackAuthor && (
-                <p className="font-mono font-bold text-xs uppercase text-gray-500 mb-6 tracking-widest">
+                <p className="font-mono font-bold text-xs uppercase text-gray-500 mb-4 tracking-widest">
                   — {feedbackAuthor}
                 </p>
               )}

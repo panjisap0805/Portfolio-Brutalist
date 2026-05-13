@@ -46,7 +46,7 @@ export default function Work() {
       tags: ["Fintech", "Mobile App", "UX Research"],
       title: "MDS Cash",
       description: "Revolutionizing micro-transactions for the unbanked. We reduced transaction time by 40% through a streamlined, gesture-based interface.",
-      imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCwMesRAWTO-yOefSsEvtl1Y-9Sj32l01ZyDRYqRaXf350-o9OYSC-PpXK1nUZf54HLMNjkiGpDyRkr8hxuo2wLhcoBOGzi-His8xoVt5PFvUkrrjMhXZP1H4pvip2R4WRb8sBVSiyHhvxy7vqWa3nivh_wMcXftqVHjilQ0h9wT2xgLEB_tgQO0aIfXAzJaogABkpSdnlD240Dba6TBvbhDJEpBi3SwWWGNBgAObQtH0rOxUs9ZWFwUmt3EezA7jIVya5oC-09sv0i",
+      imageSrc: "/asset-mdscash-thumbnail.webp",
       alt: "MDS Cash App",
       link: "/work/mds-cash"
     },
@@ -56,7 +56,7 @@ export default function Work() {
       tags: ["Logistics", "Web Platform", "B2B"],
       title: "Jakmall Warehouse",
       description: "A comprehensive warehouse management system designed for high-volume inventory tracking. Improved picker accuracy by 99% with a new visual scanning system.",
-      imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuBWynDAb3G0aibdcro6Mb5mPfSRsKjz1EpucKEJcqk4UhVqx9zYu2Nntd84GFWd8h_9oipslLzS9yHYPxHrKcxl-WKqS9W-FK1AKytmMt2FRUW_QX1eK2OWU2h1VWisvue970SHwybiZS4Bd_HTGmonM9pwDT7gc3hpNlWapkLkza9CzTIMGDQDYIhG77mcCnWP2pCIDjxuSyrT9mlXZRZAOAU3DrCelVc-TvTj94hvOyMOamFfypgGENvUSIt5pzW0rlhanajEZeCe",
+      imageSrc: "/asset-warehouse-thumbnail.webp",
       alt: "Jakmall Warehouse",
       link: "/work/warehouse-internal-freight"
     }

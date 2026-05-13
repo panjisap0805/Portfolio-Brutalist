@@ -61,7 +61,7 @@ export default function WarehouseInternalFreight() {
       stat2Label: "EFFICIENCY",
       stat2Value: "Paper Reduced",
       stat2Subtitle: "Scan vs Type workflow drastically increased throughput.",
-      feedbackQuote: "Highly Beneficial",
+      feedbackQuote: "This feature works exceptionally well. Before its implementation, the workflow was difficult due to manual processes, leading to a high rate of missing goods. Now, the process is streamlined and inventory loss has been completely eliminated.",
       feedbackAuthor: "Amen, Head of Warehouse",
       feedbackSentiment: "POSITIVE SENTIMENT"
     }

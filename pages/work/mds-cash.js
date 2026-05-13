@@ -59,7 +59,7 @@ export default function MDSCash() {
       stat1Subtitle: "Significant increase in user satisfaction when usability testing.",
       stat2Value: "+40%",
       stat2Subtitle: "Faster loan processing times achieved within the first quarter.",
-      constraintsText: 'We were unable to fully integrate with the legacy banking core due to API restrictions. The solution relies on a middleware layer that syncs nightly, meaning "real-time" data has a slight latency we had to disclose in the UI.'
+      constraintsText: 'We were unable to fully integrate due to technical limitations, the redesigned MDS Cash feature has not yet been published. Despite this, several internal issues identified during research have already been addressed with the updated flow, resulting in a significant decrease in the number of users contacting the helpdesk regarding their loan application status.'
     },
     nextProject: {
       tag: "CASE_STUDY_02",
