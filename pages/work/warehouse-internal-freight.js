@@ -48,9 +48,9 @@ export default function WarehouseInternalFreight() {
       ]
     },
     showcase: {
-      protoImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuBT0xtEqOjkPaPlKMoSqd8BVg25vvnm0IyEyjpqEO25Q47zlFja7YbUVBGDu9xW-VZPkoTSZTHXzxbdrX1sSn2D72FS8UOgXIyh7QpccvVYYDXb4XcHE4Bjfp1v3Sb3Zen9whxtVFYeGrUDzLUKOKbX3GEE3NFn5zQMnvp1vS2nl9JK290NEFfPerYALDiWI3Ee71TN-VULuakejrJg_3ZQ-fZcpbYU3g_wNGdMXICYOv3GRxzyQV-T9GZy7WXSQjcJ-pZEa1Zlw2j9",
-      mainImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuBT0xtEqOjkPaPlKMoSqd8BVg25vvnm0IyEyjpqEO25Q47zlFja7YbUVBGDu9xW-VZPkoTSZTHXzxbdrX1sSn2D72FS8UOgXIyh7QpccvVYYDXb4XcHE4Bjfp1v3Sb3Zen9whxtVFYeGrUDzLUKOKbX3GEE3NFn5zQMnvp1vS2nl9JK290NEFfPerYALDiWI3Ee71TN-VULuakejrJg_3ZQ-fZcpbYU3g_wNGdMXICYOv3GRxzyQV-T9GZy7WXSQjcJ-pZEa1Zlw2j9",
-      mainTag: "BOX_STICKER_DESIGN_&_ITEM_LOG_UI"
+      protoImage: "/asset-jakmall-blueprint.webp",
+      mainImage: "/asset-jakmall-final.webp",
+      mainTag: "/dir/jakmall/warehouse"
     },
     impact: {
       stat1Icon: "inventory_2",
@@ -91,6 +91,7 @@ export default function WarehouseInternalFreight() {
         />
         <ProjectShowcase
           mainImage={projectData.showcase.mainImage}
+          protoImage={projectData.showcase.protoImage}
           mainTag={projectData.showcase.mainTag}
           mobileImage={projectData.showcase.mobileImage}
           detailImage={projectData.showcase.detailImage}

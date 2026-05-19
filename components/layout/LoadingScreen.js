@@ -58,7 +58,7 @@ export default function LoadingScreen({ onComplete }) {
           <div className="md:col-span-8 md:col-start-3 flex flex-col gap-6">
             <div className="border-2 border-black p-6 bg-white shadow-[8px_8px_0_0_#000]">
               <div className="flex justify-between items-end mb-4">
-                <span className="font-label text-lg font-bold">CORE_PROGRESS</span>
+                <span className="font-label text-lg font-bold">LOADING...</span>
                 <span className="font-label text-2xl font-bold text-primary">STATUS: {progress}% COMPLETE</span>
               </div>
 
@@ -96,7 +96,7 @@ export default function LoadingScreen({ onComplete }) {
               {/* MODULE 03 */}
               <div className={mod3.boxClasses}>
                 <span className="font-label text-xs opacity-60 block mb-1">MODULE_03</span>
-                <span className={mod3.textClasses}>[FETCHING: ASSET_RELATED_IMAGE]</span>
+                <span className={mod3.textClasses}>[FETCHING: ASSET_PROJECT_IMAGE]</span>
               </div>
             </div>
           </div>

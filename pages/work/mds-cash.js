@@ -50,7 +50,7 @@ export default function MDSCash() {
     },
     showcase: {
       mainImage: "/asset-mdscash-final.webp",
-      mainTag: "FIGMA_V_2.4",
+      mainTag: "/dir/mds/mdscash",
       protoImage: "/asset-mdscash-blueprint.webp"
     },
     impact: {
