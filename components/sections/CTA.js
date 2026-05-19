@@ -18,12 +18,12 @@ export default function CTA({ isProject, nextLink, nextProjectName }) {
 
         <div className="flex flex-col sm:flex-row gap-6 items-center">
           <a href="mailto:hallo@panjisaputro.id" className="group bg-black text-white font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border brutalist-shadow-primary hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0_0_#0f49bd] transition-all flex items-center gap-2">
-            [CONTACT_ME]
+            [TALK_TO_PANJI]
             <span className="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>
           {showNextProject ? (
             <Link href={nextLink} className="group bg-white text-black font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border hover:bg-gray-50 transition-all flex items-center gap-2">
-              [NEXT_PROJECT]
+              [{nextProjectName || "NEXT_PROJECT"}]
               <span className="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </Link>
           ) : (

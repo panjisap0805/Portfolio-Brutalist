@@ -42,6 +42,16 @@ export default function Work() {
   const caseStudies = [
     {
       number: "01",
+      tag: "CRM",
+      tags: ["SaaS", "Web Platform", "Development"],
+      title: "CRM MDS",
+      description: "Streamlining and integrating the internal CRM helpdesk workflow for MDS Cooperative.",
+      imageSrc: "/asset-mdscash-thumbnail.webp",
+      alt: "MDS Cash App",
+      link: "/work/crm-helpdesk"
+    },
+    {
+      number: "02",
       tag: "FIN",
       tags: ["Fintech", "Mobile App", "UX Research"],
       title: "MDS Cash",
@@ -51,7 +61,7 @@ export default function Work() {
       link: "/work/mds-cash"
     },
     {
-      number: "02",
+      number: "03",
       tag: "LOG",
       tags: ["Logistics", "Web Platform", "B2B"],
       title: "Jakmall Warehouse",
