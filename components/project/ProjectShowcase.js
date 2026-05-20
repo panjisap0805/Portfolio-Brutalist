@@ -22,7 +22,7 @@ export default function ProjectShowcase({ mainImage, protoImage, mainTag, crmIma
             <span className="w-3 h-3 border border-black rounded-full bg-green-500 animate-pulse"></span>
             <span className="font-bold text-xs uppercase tracking-widest">STATUS: LO-FI DESIGN</span>
           </div>
-        </div> 
+        </div>
       )}
 
       {crmImage && (
@@ -30,9 +30,9 @@ export default function ProjectShowcase({ mainImage, protoImage, mainTag, crmIma
           <img className="object-cover object-top w-full h-full opacity-90 group-hover:opacity-100 transition-opacity duration-500 scale-100 group-hover:scale-[1.02] transform origin-top" src={crmImage} />
           <div className="absolute bottom-6 left-6 bg-white border-2 border-black text-black font-mono flex items-center gap-3 px-4 py-3 shadow-[4px_4px_0px_#000]">
             <span className="w-3 h-3 border border-black rounded-full bg-green-500 animate-pulse"></span>
-            <span className="font-bold text-xs uppercase tracking-widest">STATUS: LIVE PRODUCT</span>
+            <span className="font-bold text-xs uppercase tracking-widest">STATUS: STAGING SERVER</span>
           </div>
-        </div> 
+        </div>
       )}
 
       {crm2Image && (
@@ -40,9 +40,9 @@ export default function ProjectShowcase({ mainImage, protoImage, mainTag, crmIma
           <img className="object-cover object-top w-full h-full opacity-90 group-hover:opacity-100 transition-opacity duration-500 scale-100 group-hover:scale-[1.02] transform origin-top" src={crm2Image} />
           <div className="absolute bottom-6 left-6 bg-white border-2 border-black text-black font-mono flex items-center gap-3 px-4 py-3 shadow-[4px_4px_0px_#000]">
             <span className="w-3 h-3 border border-black rounded-full bg-green-500 animate-pulse"></span>
-            <span className="font-bold text-xs uppercase tracking-widest">STATUS: LIVE PRODUCT</span>
+            <span className="font-bold text-xs uppercase tracking-widest">STATUS: STAGGING SERVER</span>
           </div>
-        </div> 
+        </div>
       )}
 
       {mainImage && (
@@ -52,8 +52,8 @@ export default function ProjectShowcase({ mainImage, protoImage, mainTag, crmIma
             <span className="w-3 h-3 border border-black rounded-full bg-green-500 animate-pulse"></span>
             <span className="font-bold text-xs uppercase tracking-widest">STATUS: FINAL DESIGN</span>
           </div>
-        </div>      
-      )}      
+        </div>
+      )}
     </div>
   );
 }

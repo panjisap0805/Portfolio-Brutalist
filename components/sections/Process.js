@@ -6,7 +6,7 @@ export default function Process() {
     { name: "Tailwind CSS", color: "" },
     { name: "React Basics", color: "" },
     { name: "Jira", color: "" },
-    { name: "Design Tokens", color: "" },
+    { name: "Design Systems", color: "" },
     { name: "Problem Solving", color: "text-primary border-primary hover:bg-primary hover:text-white hover:border-primary" },
   ];
 

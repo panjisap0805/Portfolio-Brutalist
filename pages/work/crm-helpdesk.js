@@ -50,8 +50,8 @@ export default function CRMHelpdeskOptimization() {
     },
     showcase: {
       mainTag: "/dir/mds/crm",
-      crmImage: "/asset-mdscash-blueprint.webp",
-      crm2Image: "/asset-mdscash-final.webp",
+      crmImage: "/asset-mds-crm.webp",
+      crm2Image: "/asset-mds-crm1.webp",
     },
     impact: {
       stat1Icon: "check_circle",

@@ -42,11 +42,11 @@ export default function Work() {
   const caseStudies = [
     {
       number: "01",
-      tag: "CRM",
+      tag: "SAA",
       tags: ["SaaS", "Web Platform", "Development"],
       title: "CRM MDS",
       description: "Streamlining and integrating the internal CRM helpdesk workflow for MDS Cooperative.",
-      imageSrc: "/asset-mdscash-thumbnail.webp",
+      imageSrc: "/asset-crm-thumbnail.webp",
       alt: "MDS Cash App",
       link: "/work/crm-helpdesk"
     },
