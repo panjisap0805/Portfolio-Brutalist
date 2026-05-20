@@ -23,10 +23,10 @@ export default function CRMHelpdeskOptimization() {
       { label: "PLATFORM", value: "Website" }
     ],
     context: {
-      overview: "MDS Coop’s internal Helpdesk team handles membership complaints nationwide. The process relies heavily on managing incoming WhatsApp chats and coordinating resolution tickets across cross-functional divisions like Finance and IT. The Goal: Maximize administrative efficiency, reduce cross-divisional miscommunication, and validate the usability of newly introduced Chat State and Sidebar Notification features.",
+      overview: "MDS Coop’s internal Helpdesk team handles membership complaints nationwide. The process relies heavily on managing incoming chats and coordinating resolution tickets across cross-functional divisions.",
       challenges: [
-        `<span class="font-bold border-b-2 border-red-200 text-black">Auto-Resolve Timeouts:</span> The existing chat system automatically closed active user sessions within 24 hours, making weekend follow-ups virtually impossible and dropping critical member inquiries.`,
-        `Helpdesk staff had to <span class="font-bold border-b-2 border-red-200 text-black">manually draft</span> and copy-paste problem logs into separate emails.`,
+        `Helpdesk staff had to <span class="font-bold border-b-2 border-red-200 text-black">manually draft</span> a ticket every time`,
+        `The other division didn't have a context about the problem`,
         `Urgent issues were <span class="font-bold border-b-2 border-red-200 text-black">lost in</span> generic chats.`
       ]
     },
@@ -38,30 +38,30 @@ export default function CRMHelpdeskOptimization() {
     ],
     insights: {
       legacyIssues: [
-        { title: "THE 24-HOUR AUTO-CLOSED CHAT TRAP", description: "Staff felt overwhelmed by automatic session timeouts. Unresolved complex issues over weekends forced agents to re-initiate manual chat sequences or switch to alternative contact channels." },
-        { title: "HIGH-FRICTION CROSS-DIVISION HANDOFFS", description: "Shifting away from manual email drafting. Agents demanded instant internal notes and a unified dashboard to minimize cross-divisional miscommunication with Finance." },
+        { title: "HIGH-FRICTION CROSS-DIVISION HANDOFFS", description: "Staff were forced to manually copy and paste problem details, leading to ambiguous task statuses and untracked resolution progress." },
+        { title: "SPAM & URGENCY BLINDNESS", description: "Urgent issues were frequently lost in generic chats, forcing staff to manually search through a high volume of incoming messages one by one to locate critical requests." },
         { title: "VISIBILITY BLIND SPOTS ON ACTION BUTTONS", description: "During testing, usability stalled on the \"Share Ticket Link\" function. Due to low color contrast, users mistook the interactive action button for a disabled UI element." }
       ],
       systemUpgrades: [
-        { title: "Chat State Categories", description: "Engineered an organized message directory (Unassigned, Assigned, Resolved) backed by persistent session tracking and distinct urgent visual badges (Red Color coding)." },
-        { title: "Integrated CRM Ticketing Module", description: "Embedded an instant ticket generation form right into the chat sidebar, auto-populating member records and adding drop-downs for Priority Level and Target Division." },
+        { title: "'Integrated' CRM Ticketing Module", description: "Replaced manual copy-pasting with a highly adaptable ticketing system, ensuring complete visibility over task progress and current issue statuses." },
+        { title: "Priority-Based Ticket Management", description: "The ticketing system enables all incoming issues to be converted into priority-sorted tickets, making it effortless to track and identify users with unresolved problems." },
         { title: "Accessible Action Buttons", description: "Re-designed the interactive link-sharing node to enforce strict high-contrast visibility boundaries, ensuring clear interactive click affordance." }
       ]
     },
     showcase: {
-      protoImage: "/asset-crm-blueprint.webp",
-      mainImage: "/asset-crm-final.webp",
-      mainTag: "/dir/mds/crm-helpdesk"
+      mainTag: "/dir/mds/crm",
+      crmImage: "/asset-mdscash-blueprint.webp",
+      crm2Image: "/asset-mdscash-final.webp",
     },
     impact: {
       stat1Icon: "check_circle",
       stat1Label: "TESTING METRIC DEFINITION",
       stat1Value: "100%",
-      stat1Subtitle: "Completion rate for core discovery pathways. Workflow Acceleration: Automated data inheritance inside the ticket generator eliminated redundant copy-pasting.",
+      stat1Subtitle: "Completion rate for core discovery pathways.",
       stat2Icon: "workspaces",
       stat2Label: "OPERATIONAL IMPACT",
       stat2Value: "Unified Workspace",
-      stat2Subtitle: "Eliminated separate email tools, providing a single-source workflow for internal issue escalation.",
+      stat2Subtitle: "Eliminated separate email tools, providing a single-source workflow.",
       constraintsText: "Currently, the website is still under further development due to the limitations of implementing the existing API within the current application."
     },
     nextProject: {
@@ -94,8 +94,8 @@ export default function CRMHelpdeskOptimization() {
           systemUpgrades={projectData.insights.systemUpgrades}
         />
         <ProjectShowcase
-          mainImage={projectData.showcase.mainImage}
-          protoImage={projectData.showcase.protoImage}
+          crmImage={projectData.showcase.crmImage}
+          crm2Image={projectData.showcase.crm2Image}
           mainTag={projectData.showcase.mainTag}
         />
         <ProjectImpact
