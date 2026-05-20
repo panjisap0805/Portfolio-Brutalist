@@ -12,7 +12,7 @@ import ProjectNavigation from "../../components/project/ProjectNavigation";
 export default function MDSCash() {
   const projectData = {
     hero: {
-      tag: "Case Study 01",
+      tag: "Case Study 02",
       title: "MDS Cash:<br className='hidden md:block'/> Online Loan Automation",
       description: "Re-engineering the lending lifecycle for speed and clarity. Transforming manual bottlenecks into a seamless digital workflow."
     },
@@ -49,8 +49,10 @@ export default function MDSCash() {
       ]
     },
     showcase: {
+      protoImage: "/asset-mdscash-blueprint.webp",
       mainImage: "/asset-mdscash-final.webp",
-      mainTag: "/dir/mds/mdscash",
+      mobileImage: "/asset-mdscash-final.webp",
+      detailImage: "/asset-mdscash-final.webp",
       protoImage: "/asset-mdscash-blueprint.webp"
     },
     impact: {
@@ -62,7 +64,7 @@ export default function MDSCash() {
       constraintsText: 'We were unable to fully integrate due to technical limitations, the redesigned MDS Cash feature has not yet been published. Despite this, several internal issues identified during research have already been addressed with the updated flow, resulting in a significant decrease in the number of users contacting the helpdesk regarding their loan application status.'
     },
     nextProject: {
-      tag: "CASE_STUDY_02",
+      tag: "CASE_STUDY_03",
       title: "WAREHOUSE INTERNAL<br className='hidden md:block'/> FREIGHT",
       link: "/work/warehouse-internal-freight"
     }

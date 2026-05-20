@@ -9,10 +9,10 @@ export default function About() {
     },
     {
       icon: "school",
-      title: "Mentor at Dealls.com",
+      title: "Personal Mentor",
       description: "Helping junior designers navigate their career paths and improving their technical design skills.",
-      linkText: "VIEW_MENTORSHIP",
-      link: "https://dealls.com/mentoring/panji-saputro-865"
+      // linkText: "VIEW_MENTORSHIP",
+      // link: "https://dealls.com/mentoring/panji-saputro-865"
     }
   ];
 
@@ -27,9 +27,11 @@ export default function About() {
             </div>
             <h4 className="text-xl font-bold mb-2">{item.title}</h4>
             <p className="text-gray-600 mb-4 pr-12">{item.description}</p>
-            <a className="text-sm font-mono font-bold underline decoration-2 underline-offset-2 hover:text-primary" href={item.link || "#"} target="_blank" rel="noopener noreferrer">
-              {item.linkText}
-            </a>
+            {item.linkText && (
+              <a className="text-sm font-mono font-bold underline decoration-2 underline-offset-2 hover:text-primary" href={item.link || "#"} target="_blank" rel="noopener noreferrer">
+                {item.linkText}
+              </a>
+            )}
           </div>
         ))}
       </div>
