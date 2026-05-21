@@ -77,7 +77,7 @@ export default function CRMHelpdeskOptimization() {
         <title>CRM Helpdesk Optimization - Panji Saputro Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <Layout backLink="/" nextLink="/" nextProjectName="BACK_TO_HOME_DASHBOARD">
+      <Layout backLink="/" nextLink="#" nextProjectName="">
         <ProjectHero
           tag={projectData.hero.tag}
           title={projectData.hero.title}

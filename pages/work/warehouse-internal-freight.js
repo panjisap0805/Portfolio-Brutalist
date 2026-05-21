@@ -11,7 +11,7 @@ import ProjectImpact from "../../components/project/ProjectImpact";
 export default function WarehouseInternalFreight() {
   const projectData = {
     hero: {
-      tag: "CASE_STUDY_02",
+      tag: "CASE_STUDY_03",
       title: "WAREHOUSE INTERNAL<br className='hidden md:block'/> FREIGHT",
       description: "Optimizing the logistics loop for central warehouse shipping. Eliminating paper nightmares and phantom goods through digital transformation."
     },

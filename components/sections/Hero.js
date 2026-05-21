@@ -14,14 +14,10 @@ export default function Hero() {
         <p className="text-lg text-gray-800 max-w-2xl mb-10 leading-relaxed font-medium">
           With <span className="bg-primary/20 px-1 font-bold">4+ years of experience</span> crafting digital products. I don&apos;t just design interfaces; I engineer interactions and bridge the critical gap between creative vision and deployment-ready code.
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap">
           <a className="group bg-black text-white font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border brutalist-shadow-primary hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0_0_#0f49bd] transition-all flex items-center gap-2" href="#work">
             [EXPLORE_PROJECTS]
             <span className="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
-          </a>
-          <a className="group bg-white text-black font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border hover:bg-gray-50 transition-all flex items-center gap-2" href="#resume">
-            DOWNLOAD_CV
-            <span className="material-icons text-sm">download</span>
           </a>
         </div>
       </div>
