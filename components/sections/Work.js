@@ -64,7 +64,7 @@ export default function Work() {
       number: "03",
       tag: "LOG",
       tags: ["Logistics", "Web Platform", "B2B"],
-      title: "Jakmall Warehouse",
+      title: "Jakmall Internal Logistic",
       description: "A comprehensive warehouse management system designed for high-volume inventory tracking. Improved picker accuracy by 99% with a new visual scanning system.",
       imageSrc: "/asset-warehouse-thumbnail.webp",
       alt: "Jakmall Warehouse",

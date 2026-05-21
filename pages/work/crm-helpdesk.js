@@ -49,7 +49,7 @@ export default function CRMHelpdeskOptimization() {
       ]
     },
     showcase: {
-      mainTag: "/dir/mds/crm",
+      mainTag: ".../mds/crm",
       crmImage: "/asset-mds-crm.webp",
       crm2Image: "/asset-mds-crm1.webp",
     },

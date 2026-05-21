@@ -49,11 +49,9 @@ export default function MDSCash() {
       ]
     },
     showcase: {
+      mainTag: ".../mds/cash",
       protoImage: "/asset-mdscash-blueprint.webp",
-      mainImage: "/asset-mdscash-final.webp",
-      mobileImage: "/asset-mdscash-final.webp",
-      detailImage: "/asset-mdscash-final.webp",
-      protoImage: "/asset-mdscash-blueprint.webp"
+      mainImage: "/asset-mdscash-final.webp"
     },
     impact: {
       stat1Value: "4.2",
