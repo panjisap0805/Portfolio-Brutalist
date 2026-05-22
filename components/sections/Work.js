@@ -63,12 +63,22 @@ export default function Work() {
     {
       number: "03",
       tag: "LOG",
-      tags: ["Logistics", "Web Platform", "B2B"],
-      title: "Jakmall Internal Logistic",
+      tags: ["Logistics", "Web Platform", "Fulfilment System"],
+      title: "Jakmall Internal Shipping",
       description: "A comprehensive warehouse management system designed for high-volume inventory tracking. Improved picker accuracy by 99% with a new visual scanning system.",
       imageSrc: "/asset-warehouse-thumbnail.webp",
       alt: "Jakmall Warehouse",
       link: "/work/warehouse-internal-freight"
+    },
+    {
+      number: "04",
+      tag: "FUL",
+      tags: ["Fulfilment System", "Web Platform", "Warehouse"],
+      title: "Jakmall Warehouse Fulfilment System",
+      description: "A comprehensive warehouse management system designed for high-volume inventory tracking. Improved picker accuracy by 99% with a new visual scanning system.",
+      imageSrc: "/asset-warehouse-thumbnail.webp",
+      alt: "Jakmall Warehouse",
+      link: "/work/warehouse-fulfillment"
     }
   ];
 
