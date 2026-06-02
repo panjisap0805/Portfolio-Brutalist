@@ -50,7 +50,7 @@ export default function WarehouseInternalFreight() {
     showcase: {
       protoImage: "/asset-jakmall-blueprint.webp",
       mainImage: "/asset-jakmall-final.webp",
-      mainTag: ".../jakmall/warehouse"
+      mainTag: ".../jakmall/shipping"
     },
     impact: {
       stat1Icon: "inventory_2",

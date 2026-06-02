@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="relative z-10 border-b-2 border-black grid grid-cols-1 lg:grid-cols-12 min-h-[85vh]">
       <div className="lg:col-span-8 p-6 lg:p-12 flex flex-col justify-center border-b-2 lg:border-b-0 lg:border-r-2 border-black">
         <div className="inline-block px-3 py-1 border-2 border-black rounded-full text-xs font-mono font-bold mb-6 w-max bg-white brutalist-shadow">
-          Available for new projects <span className="text-green-500">●</span>
+          Available for new opprotunities <span className="text-green-500">●</span>
         </div>
         <h1 className="text-6xl lg:text-9xl font-bold leading-[0.85] tracking-tighter uppercase mb-4">
           Panji<br /><span className="text-stroke">Saputro</span>
