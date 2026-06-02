@@ -1,12 +1,16 @@
 export default function Process() {
   const skills = [
-    { name: "Figma", color: "" },
-    { name: "HTML/CSS", color: "" },
-    { name: "Git Flow", color: "" },
-    { name: "Tailwind CSS", color: "" },
-    { name: "React Basics", color: "" },
-    { name: "Jira", color: "" },
+    { name: "Interaction Design", color: "" },
+    { name: "UX Research", color: "" },
+    { name: "Usability Testing", color: "" },
+    { name: "Wireframing & Prototyping", color: "" },
+    { name: "Information Architecture", color: "" },
     { name: "Design Systems", color: "" },
+    { name: "Figma", color: "" },
+    { name: "HTML/CSS/Javascript", color: "" },
+    { name: "Git Flow", color: "" },
+    { name: "Node.js", color: "" },
+    { name: "Jira", color: "" },
     { name: "Problem Solving", color: "text-primary border-primary hover:bg-primary hover:text-white hover:border-primary" },
   ];
 
@@ -17,7 +21,7 @@ export default function Process() {
           The <span className="text-primary">Technical Edge</span>
         </h3>
         <p className="text-xl font-medium mb-10 leading-relaxed">
-          I don&apos;t stop at Figma. I speak the language of engineers. My workflow includes Git, component-driven development, and a deep understanding of frontend constraints.
+          I don&apos;t stop at Figma. I speak the language of engineers. My workflow includes Git, component-driven development, and a deep understanding of frontend and backend constraints.
         </p>
         <div className="space-y-6 font-mono">
           <div className="flex items-center gap-4">
