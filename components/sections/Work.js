@@ -43,17 +43,17 @@ export default function Work() {
     {
       number: "01",
       tag: "SAA",
-      tags: ["SaaS", "Web Platform", "Development"],
+      tags: ["SaaS", "Web Platform", "Fullstack"],
       title: "CRM MDS",
       description: "Streamlining and integrating the internal CRM helpdesk workflow for MDS Cooperative.",
       imageSrc: "/asset-crm-thumbnail.webp",
-      alt: "MDS Cash App",
+      alt: "MDS CRM",
       link: "/work/crm-helpdesk"
     },
     {
       number: "02",
       tag: "FIN",
-      tags: ["Fintech", "Mobile App", "UX Research"],
+      tags: ["Fintech", "Mobile App", "Product Designer"],
       title: "MDS Cash",
       description: "Revolutionizing micro-transactions for the unbanked. We reduced transaction time by 40% through a streamlined, gesture-based interface.",
       imageSrc: "/asset-mdscash-thumbnail.webp",
@@ -63,21 +63,21 @@ export default function Work() {
     {
       number: "03",
       tag: "LOG",
-      tags: ["Logistics", "Web Platform", "Fulfilment System"],
+      tags: ["Logistics", "Web Platform", "UI/UX Designer"],
       title: "Jakmall Internal Shipping",
       description: "A comprehensive warehouse management system designed for high-volume inventory tracking. Improved picker accuracy by 99% with a new visual scanning system.",
       imageSrc: "/asset-warehouse-thumbnail.webp",
-      alt: "Jakmall Warehouse",
+      alt: "Jakmall Internal Logistic Warehouse",
       link: "/work/warehouse-internal-freight"
     },
     {
       number: "04",
       tag: "FUL",
-      tags: ["Fulfilment System", "Web Platform", "Warehouse"],
-      title: "Jakmall Warehouse Fulfilment System",
+      tags: ["Fulfillment System", "Web Platform", "UI/UX Designer"],
+      title: "Jakmall Warehouse Fulfillment System",
       description: "A comprehensive warehouse management system designed for high-volume inventory tracking. Improved picker accuracy by 99% with a new visual scanning system.",
-      imageSrc: "/asset-warehouse-thumbnail.webp",
-      alt: "Jakmall Warehouse",
+      imageSrc: "/asset-fulfillment-thumbnail.webp",
+      alt: "Jakmall Warehouse Fulfillment System",
       link: "/work/warehouse-fulfillment"
     }
   ];

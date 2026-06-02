@@ -24,9 +24,8 @@ export default function WarehouseFulfillment() {
     context: {
       overview: "Warehouse operations rely on two distinct roles: picking (retrieving SKUs from shelves) and collecting (gathering picked items). However, this legacy workflow suffered from massive paper waste, inefficient cross-zone coordination, and frequent human errors.",
       challenges: [
-        `When an order batch arrives, the legacy system prints hard-copy item lists detailing zone locations.`,
-        `Collecting PICs must travel across separate floors to retrieve these papers.`,
-        `At each zone, they physically hand paper requests to Picking PICs, wait for manual scanning, and conduct paper-signed handovers.`
+        `Staff are unfamiliar with <span class="font-bold border-b-2 border-red-200">digital tools for work</span>, using phones mostly for social media.`,
+        `Changing <span class="font-bold border-b-2 border-red-200">long-established habits</span> is hard, especially under strict existing SLAs.`
       ]
     },
     process: [
@@ -51,8 +50,8 @@ export default function WarehouseFulfillment() {
     },
     showcase: {
       mainTag: ".../jakmall/fulfillment",
-      crmImage: "/asset-warehouse-mockup1.webp",
-      crm2Image: "/asset-warehouse-mockup2.webp",
+      fulfillmentImage: "/asset-jakmall-fulfillmentv1.webp",
+      fulfillmentImage2: "/asset-jakmall-fulfillmentv2.webp",
     },
     impact: {
       stat1Icon: "description",
@@ -92,8 +91,8 @@ export default function WarehouseFulfillment() {
           systemUpgrades={projectData.insights.systemUpgrades}
         />
         <ProjectShowcase
-          crmImage={projectData.showcase.crmImage}
-          crm2Image={projectData.showcase.crm2Image}
+          fulfillmentImage={projectData.showcase.fulfillmentImage}
+          fulfillmentImage2={projectData.showcase.fulfillmentImage2}
           mainTag={projectData.showcase.mainTag}
         />
         <ProjectImpact
