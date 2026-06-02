@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="inline-block px-3 py-1 border-2 border-black rounded-full text-xs font-mono font-bold mb-6 w-max bg-white brutalist-shadow">
           Available for new opprotunities <span className="text-green-500">●</span>
         </div>
-        <h1 className="text-6xl lg:text-9xl font-bold leading-[0.85] tracking-tighter uppercase mb-4">
+        <h1 className="text-[17vw] lg:text-9xl font-bold leading-[0.85] tracking-tighter uppercase mb-4">
           Panji<br /><span className="text-stroke">Saputro</span>
         </h1>
         <h2 className="text-xl lg:text-2xl font-mono border-l-4 border-primary pl-4 mb-8 max-w-xl">
@@ -15,7 +15,7 @@ export default function Hero() {
           With <span className="bg-primary/20 px-1 font-bold">4+ years of experience</span> crafting digital products. I don&apos;t just design interfaces; I engineer interactions and bridge the critical gap between creative vision and deployment-ready code.
         </p>
         <div className="flex flex-wrap">
-          <a className="group bg-black text-white font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border brutalist-shadow-primary hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0_0_#0f49bd] transition-all flex items-center gap-2" href="#work">
+          <a className="group bg-black text-white font-bold text-lg px-8 py-4 uppercase tracking-wider text-center brutalist-border brutalist-shadow-primary hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0_0_#0f49bd] transition-all flex w-full lg:w-auto justify-center items-center gap-2" href="#work">
             [EXPLORE_PROJECTS]
             <span className="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>

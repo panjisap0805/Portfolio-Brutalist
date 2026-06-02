@@ -17,7 +17,7 @@ export default function Process() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 border-b-2 border-black" id="process">
       <div className="p-8 lg:p-16 border-b-2 lg:border-b-0 lg:border-r-2 border-black bg-background-light">
-        <h3 className="text-5xl font-bold uppercase mb-8 leading-tight">
+        <h3 className="text-[12vw] md:text-6xl lg:text-7xl font-bold uppercase mb-8 leading-tight">
           The <span className="text-primary">Technical Edge</span>
         </h3>
         <p className="text-xl font-medium mb-10 leading-relaxed">
@@ -50,7 +50,7 @@ export default function Process() {
           </div>
           <div className="flex flex-wrap gap-3">
             {skills.map((skill, i) => (
-              <span key={i} className={`px-4 py-2 border-2 border-black rounded-full font-bold cursor-crosshair transition-colors ${skill.color ? skill.color : 'hover:bg-black hover:text-white'}`}>
+              <span key={i} className={`px-5 py-3 lg:px-4 lg:py-2 border-2 border-black rounded-full font-bold cursor-crosshair transition-colors ${skill.color ? skill.color : 'hover:bg-black hover:text-white'}`}>
                 {skill.name}
               </span>
             ))}
