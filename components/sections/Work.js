@@ -8,7 +8,12 @@ function CaseStudy({ number, tag, tags, title, description, imageSrc, alt, link 
           {number} / {tag}
         </span>
       </div>
-      <div className="order-3 lg:order-2 lg:col-span-7 p-8 lg:p-12 border-r-2 border-black flex flex-col justify-center">
+      <div className="relative order-3 lg:order-2 lg:col-span-7 p-8 lg:p-12 border-r-2 border-black flex flex-col justify-center">
+        {link ? (
+          <Link href={link} className="absolute inset-0 z-10 lg:hidden" aria-label={`Read ${title} case study`} />
+        ) : (
+          <a href="#" className="absolute inset-0 z-10 lg:hidden" aria-label={`Read ${title} case study`} />
+        )}
         <div className="flex gap-2 mb-4 flex-wrap">
           {tags.map((t, i) => (
             <span key={i} className={`px-3 py-1 border border-black rounded-full text-xs font-bold uppercase ${i === 0 ? 'bg-primary/10 text-primary' : ''}`}>
