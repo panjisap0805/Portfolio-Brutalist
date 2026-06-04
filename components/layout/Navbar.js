@@ -15,7 +15,7 @@ export default function Navbar() {
           <Link className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="/#work">[CASE STUDIES]</Link>
           <Link className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="/#process">[PROCESS]</Link>
           <Link className="flex items-center px-6 border-l-2 border-black hover:bg-black hover:text-white transition-all duration-200" href="/#about">[ABOUT]</Link>
-          <Link className="flex items-center px-6 border-l-2 border-black bg-primary/10 hover:bg-primary hover:text-white transition-all duration-200 font-bold text-primary" href="/#contact">[CONTACT]</Link>
+          <Link className="flex items-center px-6 border-l-2 border-black border-r-2 bg-primary/10 hover:bg-primary hover:text-white transition-all duration-200 font-bold text-primary" href="/#contact">[CONTACT]</Link>
         </div>
 
         <button 

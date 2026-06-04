@@ -6,7 +6,8 @@ export default function ProjectMetadata({ metadata }) {
           key={idx} 
           // Applies border-r except for mobile 2nd col and desktop last col
           className={`p-6 md:p-8 flex flex-col justify-between gap-4 border-black
-            ${idx < metadata.length - 1 ? 'border-b-2 md:border-b-0 md:border-r-2' : ''}
+            ${idx < metadata.length - 2 ? 'border-b-2' : ''}
+            ${idx < metadata.length - 1 ? 'md:border-b-0 md:border-r-2' : ''}
             ${(idx === 0 || idx === 2) ? 'border-r-2' : ''}
           `}
         >
