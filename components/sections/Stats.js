@@ -4,7 +4,7 @@ export default function Stats() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div className="p-8 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group">
           <div className="text-sm font-mono text-gray-500 mb-2 group-hover:text-black">EFFICIENCY_IMPACT</div>
-          <div className="text-5xl lg:text-6xl font-bold text-primary mb-2">80%</div>
+          <div className="text-5xl lg:text-6xl font-bold text-primary mb-2">60%</div>
           <div className="font-bold uppercase tracking-tight">Time Saved on All Projects</div>
         </div>
         <div className="p-8 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group">
@@ -14,7 +14,7 @@ export default function Stats() {
         </div>
         <div className="p-8 border-b-2 md:border-b-0 border-black hover:bg-gray-50 transition-colors group">
           <div className="text-sm font-mono text-gray-500 mb-2 group-hover:text-black">SYSTEM_PERFORMANCE</div>
-          <div className="text-5xl lg:text-6xl font-bold text-primary mb-2">300%</div>
+          <div className="text-5xl lg:text-6xl font-bold text-primary mb-2">80%</div>
           <div className="font-bold uppercase tracking-tight">Faster Performace on MDS Project</div>
         </div>
         {/*
