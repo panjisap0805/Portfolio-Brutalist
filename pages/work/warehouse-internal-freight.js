@@ -7,6 +7,7 @@ import ProjectProcess from "../../components/project/ProjectProcess";
 import ProjectInsights from "../../components/project/ProjectInsights";
 import ProjectShowcase from "../../components/project/ProjectShowcase";
 import ProjectImpact from "../../components/project/ProjectImpact";
+import ProjectNavigation from "@/components/project/ProjectNavigation";
 
 export default function WarehouseInternalFreight() {
   const projectData = {
@@ -64,6 +65,11 @@ export default function WarehouseInternalFreight() {
       feedbackQuote: "This feature works exceptionally well. Before its implementation, the workflow was difficult due to manual processes, leading to a high rate of missing goods. Now, the process is streamlined and inventory loss has been completely eliminated.",
       feedbackAuthor: "Amen, Head of Warehouse",
       feedbackSentiment: "POSITIVE SENTIMENT"
+    },
+    nextProject: {
+      tag: "CASE_STUDY_04",
+      title: "WAREHOUSE FULFILLMENT<br className='hidden md:block'/> SYSTEM",
+      link: "/work/warehouse-fulfillment"
     }
   };
 
@@ -109,6 +115,7 @@ export default function WarehouseInternalFreight() {
           feedbackAuthor={projectData.impact.feedbackAuthor}
           feedbackSentiment={projectData.impact.feedbackSentiment}
         />
+        <ProjectNavigation nextProject={projectData.nextProject} />
       </Layout>
     </>
   );

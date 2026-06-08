@@ -80,7 +80,7 @@ export default function Work() {
       tag: "FUL",
       tags: ["Fulfillment System", "Web Platform", "UI/UX Designer"],
       title: "Jakmall Warehouse Fulfillment System",
-      description: "A comprehensive warehouse management system designed for high-volume inventory tracking. Improved picker accuracy by 99% with a new visual scanning system.",
+      description: "Transformed paper-driven picking workflows into a mobile ecosystem. Reduced paper waste by 90% and enabled dynamic cross-zone staff reallocation.",
       imageSrc: "/asset-fulfillment-thumbnail.webp",
       alt: "Jakmall Warehouse Fulfillment System",
       link: "/work/warehouse-fulfillment"
