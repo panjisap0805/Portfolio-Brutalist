@@ -1,46 +1,287 @@
 @import "tailwindcss";
 
+/*
+  Engineering Brutalism tokens (IMPLEMENTATION_PLAN.md §1.2).
+  One accent. Red is reserved for problem/audit marking only.
+*/
 @theme {
-  --color-primary: #0f49bd;
-  --color-background-light: #ffffff;
-  --color-background-dark: #101622;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
-  --radius-DEFAULT: 0.125rem;
-  --radius-lg: 0.25rem;
-  --radius-xl: 0.5rem;
-  --radius-full: 0.75rem;
-  --border-width-3: 3px;
+  --color-paper: #faf7f2;
+  --color-ink: #0e0e0c;
+  --color-ink-soft: #57534a;
+  --color-cobalt: #0f49bd;
+  --color-redline: #d42b1e;
+  --color-grid: #e7e2d9;
+  --color-tint: #f2eee6;
+
+  --ease-mech: cubic-bezier(0.65, 0, 0.25, 1);
 }
 
-@layer utilities {
-  .brutalist-border {
-    border: 2px solid #000;
+@theme inline {
+  --font-display: var(--font-archivo), "Archivo", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+  --font-mono: var(--font-plex-mono), "IBM Plex Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-  .brutalist-shadow {
-    box-shadow: 4px 4px 0px 0px #000;
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
-  .brutalist-shadow-hover:hover {
-    box-shadow: 2px 2px 0px 0px #000;
-    transform: translate(2px, 2px);
+
+  ::selection {
+    background: var(--color-cobalt);
+    color: var(--color-paper);
   }
-  .brutalist-shadow-primary {
-    box-shadow: 4px 4px 0px 0px #0f49bd;
-  }
-  .text-stroke {
-    -webkit-text-stroke: 1px black;
-    color: transparent;
-  }
-  .pattern-grid {
-    background-image: linear-gradient(#e5e7eb 1px, transparent 1px), linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
-    background-size: 20px 20px;
-  }
-  .animate-spin-slow {
-    animation: slow-spin 8s linear infinite;
-  }
-  @keyframes slow-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--color-cobalt);
+    outline-offset: 3px;
   }
 }
 
+@layer components {
+  /* Technical label: doc codes, metadata, captions. Used sparingly. */
+  .t-label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* Display type: Archivo on the width axis, expanded = spec-sheet titling. */
+  .t-display {
+    font-family: var(--font-display);
+    font-stretch: 125%;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+
+  /* Statement type: normal width, for prose-scale emphasis (The Turn, footer). */
+  .t-statement {
+    font-family: var(--font-display);
+    font-stretch: 105%;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+
+  /* Machine-button: press = shadow collapses + 2px travel. Hover = cobalt offset. */
+  .btn-mech {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid var(--color-ink);
+    background: var(--color-ink);
+    color: var(--color-paper);
+    cursor: pointer;
+    transition:
+      transform 120ms var(--ease-mech),
+      box-shadow 120ms var(--ease-mech);
+  }
+  .btn-mech:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 var(--color-cobalt);
+  }
+  .btn-mech:active {
+    transform: translate(0, 0);
+    box-shadow: 1px 1px 0 var(--color-cobalt);
+  }
+  .btn-mech--ghost {
+    background: transparent;
+    color: var(--color-ink);
+  }
+  .btn-mech--ghost:hover {
+    box-shadow: 4px 4px 0 var(--color-ink);
+  }
+  .btn-mech--ghost:active {
+    box-shadow: 1px 1px 0 var(--color-ink);
+  }
+  .btn-mech--paper {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    border-color: var(--color-paper);
+  }
+
+  /* Link underline draws in from the left, like a pen stroke. */
+  .link-draw {
+    background-image: linear-gradient(var(--color-cobalt), var(--color-cobalt));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0% 1px;
+    transition: background-size 150ms var(--ease-mech);
+    padding-bottom: 2px;
+  }
+  .link-draw:hover,
+  .link-draw:focus-visible {
+    background-size: 100% 1px;
+  }
+
+  /* Exposed technical grid, masked out toward the bottom. */
+  .sheet-grid {
+    background-image:
+      linear-gradient(var(--color-grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: linear-gradient(180deg, #000 20%, transparent 85%);
+  }
+
+  /* Status stamp. Rotated a hair, double-ruled, inked on arrival. */
+  .stamp {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.375rem 0.75rem;
+    border: 1.5px solid currentColor;
+    box-shadow: 0 0 0 3px var(--color-paper), 0 0 0 4px currentColor;
+    transform: rotate(-2deg);
+    white-space: nowrap;
+  }
+  .stamp--in {
+    animation: stamp-in 280ms var(--ease-mech) 150ms both;
+  }
+  @keyframes stamp-in {
+    from {
+      opacity: 0;
+      transform: rotate(-2deg) scale(1.25);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(-2deg) scale(1);
+    }
+  }
+
+  /* Scroll reveal. Parent gets data-in="true" once, children carry --ri index. */
+  .rv {
+    opacity: 0;
+    transform: translateY(14px);
+    transition:
+      opacity 400ms var(--ease-mech),
+      transform 400ms var(--ease-mech);
+    transition-delay: calc(var(--ri, 0) * 70ms);
+  }
+  [data-in="true"] .rv {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Annotation markers: numbered survey points on an image. */
+  .anno-marker {
+    position: absolute;
+    translate: -50% -50%;
+    display: grid;
+    place-items: center;
+    width: 1.375rem;
+    height: 1.375rem;
+    font-family: var(--font-mono);
+    font-size: 0.625rem;
+    font-weight: 600;
+    background: var(--color-paper);
+    border: 1.5px solid currentColor;
+    transition:
+      transform 200ms var(--ease-mech),
+      background 120ms var(--ease-mech),
+      color 120ms var(--ease-mech);
+  }
+  .anno-marker::before,
+  .anno-marker::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+  }
+  .anno-marker::before {
+    width: 1px;
+    height: 8px;
+    top: -12px;
+  }
+  .anno-marker::after {
+    width: 8px;
+    height: 1px;
+    left: -12px;
+  }
+  [data-in="false"] .anno-marker {
+    transform: scale(0);
+  }
+  [data-in="true"] .anno-marker {
+    transform: scale(1);
+    transition-delay: calc(var(--ai, 0) * 90ms);
+  }
+  .anno-marker[data-active="true"] {
+    background: currentColor;
+  }
+  .anno-marker[data-active="true"] > span {
+    color: var(--color-paper);
+  }
+
+  /* Ticker track. Duplicated content scrolls half its own width. */
+  .ticker-track {
+    display: inline-flex;
+    animation: ticker-scroll 28s linear infinite;
+  }
+  @keyframes ticker-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .caret-blink {
+    animation: caret-blink 1.05s steps(1) infinite;
+  }
+  @keyframes caret-blink {
+    0%,
+    48% {
+      opacity: 1;
+    }
+    49%,
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+/* Motion dies here. Content stays intact. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+  .rv,
+  [data-in="false"] .anno-marker {
+    opacity: 1;
+    transform: none;
+  }
+  .ticker-track {
+    animation: none;
+    flex-wrap: wrap;
+  }
+}
