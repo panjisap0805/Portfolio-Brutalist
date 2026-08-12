@@ -17,7 +17,12 @@ export default function Hero() {
           <span aria-hidden="true">/</span>
           <span>Design + code</span>
         </p>
-        <h1 className="t-display text-[clamp(2.5rem,8.4vw,6.25rem)]">
+        {/*
+          Sized off the longest role, not off taste: "Product Designer" is
+          13.5em wide in expanded Archivo. Below md it wraps inside a two-line
+          mask; from md up it must fit one line of (min(vw,1200) - 80px).
+        */}
+        <h1 className="t-display text-[clamp(1.625rem,9vw,3.25rem)] md:text-[min(6.4vw,5rem)]">
           <span className="block">
             <RoleCycler roles={ROLES} />
           </span>

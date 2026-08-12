@@ -48,3 +48,5 @@ AGENTS copy.md
 CLAUDE.md
 CLAUDE copy.md
 IMPLEMENTATION_PLAN.md
+/.agents/
+/.claude/

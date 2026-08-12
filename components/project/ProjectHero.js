@@ -16,7 +16,8 @@ export default function ProjectHero({ project }) {
           <p className="t-label mt-6 text-cobalt">
             {docCode} / {year} / {domain}
           </p>
-          <h1 className="t-display mt-3 text-[clamp(2.25rem,6vw,4.5rem)]">
+          {/* "Fulfillment" is 8.8em wide here, so the floor tracks vw down to 320px. */}
+          <h1 className="t-display mt-3 text-[clamp(1.875rem,9.6vw,4.5rem)]">
             {hero.title}
           </h1>
           <p className="mt-5 max-w-[58ch] text-[1.0625rem] leading-relaxed text-ink-soft md:text-lg">

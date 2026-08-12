@@ -6,6 +6,9 @@ const nextConfig = {
   output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
+  // Dev-only: izinkan akses dev server dari HP/device lain di LAN.
+  // Tidak berpengaruh pada `next build` (output: "export").
+  allowedDevOrigins: ["192.168.0.110"],
 };
 
 export default nextConfig;
