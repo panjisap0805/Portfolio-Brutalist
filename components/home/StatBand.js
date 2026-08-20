@@ -34,8 +34,8 @@ export default function StatBand() {
             Numbers I can defend
           </h2>
           <p className="rv mt-3 max-w-[52ch] text-ink-soft" style={{ "--ri": 1 }}>
-            Every figure states how it was measured. Anything I could not
-            source got deleted, not rounded up.
+            Real outcomes from production systems. Built to cut friction,
+            streamline operations, and deliver measurable business value.
           </p>
           <dl className="rv mt-8 grid border border-ink sm:grid-cols-2 lg:grid-cols-4" style={{ "--ri": 2 }}>
             {stats.map((s, i) => (
