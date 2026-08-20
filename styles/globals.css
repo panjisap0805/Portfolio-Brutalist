@@ -78,6 +78,22 @@
     line-height: 1.1;
   }
 
+  /* Subhead copy with marker highlight on <u> */
+  .subhead {
+    max-width: 40ch;
+    font-size: clamp(1.125rem, 2.2vw, 1.375rem);
+    line-height: 1.45;
+  }
+  .subhead u {
+    text-decoration: none;
+    background: linear-gradient(
+      transparent 62%,
+      color-mix(in srgb, var(--color-cobalt) 24%, transparent) 0
+    );
+    padding: 0 2px;
+    font-weight: 600;
+  }
+
   /* Machine-button: press = shadow collapses + 2px travel. Hover = cobalt offset. */
   .btn-mech {
     display: inline-flex;

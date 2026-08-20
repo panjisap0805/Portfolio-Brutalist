@@ -22,15 +22,19 @@ export default function Hero() {
           13.5em wide in expanded Archivo. Below md it wraps inside a two-line
           mask; from md up it must fit one line of (min(vw,1200) - 80px).
         */}
+        <p className="mb-2 text-[clamp(1.0625rem,2.2vw,1.375rem)] font-medium text-ink-soft">
+          Hi — I&rsquo;m <b className="font-semibold text-ink">Panji Saputro</b>, a
+        </p>
         <h1 className="t-display text-[clamp(1.625rem,9vw,3.25rem)] md:text-[min(6.4vw,5rem)]">
           <span className="block">
             <RoleCycler roles={ROLES} />
           </span>
           <span className="block">who ships.</span>
         </h1>
-        <p className="mt-7 max-w-[38ch] text-[clamp(1.125rem,2.2vw,1.375rem)] leading-[1.45]">
-          I&rsquo;m Panji. I turn messy operational reality into working systems:
-          research, flows, and code I deploy myself.
+        <p className="subhead mt-7">
+          I turn messy operational reality into working systems. I do running
+          the research, drawing the flows, and <u>deploying the code myself</u>.
+          Design and engineering, one hand-off shorter.
         </p>
         <div className="mt-9">
           <ButtonLink href="/#work">View case studies &rarr;</ButtonLink>
