@@ -1,6 +1,9 @@
+import { Suspense } from "react";
 import { Archivo, Inter, IBM_Plex_Mono } from "next/font/google";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import InitialPreloader from "@/components/ui/InitialPreloader";
+import TopProgressBar from "@/components/ui/TopProgressBar";
 import "@/styles/globals.css";
 
 const archivo = Archivo({
@@ -49,6 +52,10 @@ export default function RootLayout({ children }) {
       className={`${archivo.variable} ${inter.variable} ${plexMono.variable}`}
     >
       <body>
+        <InitialPreloader />
+        <Suspense fallback={null}>
+          <TopProgressBar />
+        </Suspense>
         <a
           href="#main"
           className="t-label sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-ink focus:px-4 focus:py-3 focus:text-paper"
@@ -62,3 +69,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

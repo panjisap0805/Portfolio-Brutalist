@@ -311,6 +311,42 @@
       opacity: 0;
     }
   }
+
+  /* Skeleton block for technical spec sheets */
+  .skeleton-block {
+    background-color: var(--color-grid);
+    position: relative;
+    overflow: hidden;
+  }
+  .skeleton-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      transparent 0,
+      rgba(255, 255, 255, 0.45) 50%,
+      transparent 100%
+    );
+    animation: skeleton-shimmer 1.6s var(--ease-mech) infinite;
+  }
+  @keyframes skeleton-shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Calibration scanline */
+  .calib-scan {
+    background-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(15, 73, 189, 0.08) 50%,
+      transparent 100%
+    );
+    background-size: 100% 8px;
+  }
 }
 
 /* Motion dies here. Content stays intact. */

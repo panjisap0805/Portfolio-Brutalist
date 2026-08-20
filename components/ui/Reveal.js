@@ -17,7 +17,7 @@ export default function Reveal({ as: Tag = "div", className = "", children, ...r
       typeof IntersectionObserver === "undefined" ||
       window.matchMedia("(prefers-reduced-motion: reduce)").matches
     ) {
-      setInView(true);
+      queueMicrotask(() => setInView(true));
       return undefined;
     }
     const io = new IntersectionObserver(
