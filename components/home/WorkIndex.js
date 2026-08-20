@@ -31,12 +31,56 @@ export default function WorkIndex() {
               <li key={p.slug} className="rv" style={{ "--ri": i + 1 }}>
                 <Link
                   href={`/work/${p.slug}/`}
-                  className="group relative grid grid-cols-[2.5rem_1fr] items-center gap-4 border-b border-grid py-6 transition-[padding,background-color] duration-200 ease-mech hover:bg-tint hover:pl-3 md:grid-cols-[3.5rem_1.4fr_auto] md:gap-5"
+                  className="group relative block border-b border-grid py-6 transition-[padding,background-color] duration-200 ease-mech hover:bg-tint hover:pl-3 md:grid md:grid-cols-[3.5rem_1.4fr_auto] md:items-center md:gap-5"
                 >
-                  <span className="t-label text-ink-soft transition-colors group-hover:text-cobalt">
+                  {/* Mobile Layout (< md) */}
+                  <div className="flex flex-col gap-3 md:hidden">
+                    <div>
+                      <span className="t-label font-semibold text-cobalt block mb-1">
+                        {p.docCode}
+                      </span>
+                      <h3 className="t-statement text-xl group-hover:text-cobalt">
+                        {p.card.name}
+                      </h3>
+                    </div>
+
+                    <div className="relative my-1 border border-ink bg-tint shadow-[3px_3px_0_var(--color-ink)] overflow-hidden">
+                      <Image
+                        src={p.card.thumbnail}
+                        alt={p.card.alt || p.card.name}
+                        width={480}
+                        height={360}
+                        sizes="100vw"
+                        className="h-auto w-full aspect-[16/10] object-cover transition-transform duration-300 ease-mech group-hover:scale-[1.02]"
+                      />
+                      <div className="absolute top-2.5 right-2.5 z-10 pointer-events-none">
+                        <Stamp
+                          label={p.stamp.label}
+                          tone={p.stamp.tone}
+                          className="!text-[0.5625rem]"
+                        />
+                      </div>
+                    </div>
+
+                    <p className="text-[0.9375rem] leading-snug text-ink-soft">
+                      {p.card.oneLiner}
+                    </p>
+
+                    <div className="mt-1 flex items-baseline gap-2">
+                      <span className="font-mono text-base font-bold text-ink transition-colors group-hover:text-cobalt">
+                        {p.card.metric}
+                      </span>
+                      <span className="t-label text-ink-soft">
+                        {p.card.metricLabel}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Desktop Layout (>= md) - Exactly preserved */}
+                  <span className="t-label text-ink-soft transition-colors group-hover:text-cobalt hidden md:inline">
                     {p.docCode}
                   </span>
-                  <span>
+                  <span className="hidden md:block">
                     <span className="t-statement block text-[clamp(1.25rem,2.6vw,1.75rem)] group-hover:text-cobalt">
                       {p.card.name}
                     </span>
@@ -44,10 +88,10 @@ export default function WorkIndex() {
                       {p.card.oneLiner}
                     </span>
                   </span>
-                  <span className="col-span-2 flex items-center gap-4 md:col-span-1 md:flex-col md:items-end md:gap-2">
+                  <span className="hidden md:flex md:flex-col md:items-end md:gap-2">
                     <span className="font-mono text-[1.0625rem] font-semibold">
                       {p.card.metric}
-                      <span className="ml-2 font-normal text-ink-soft max-md:hidden">
+                      <span className="ml-2 font-normal text-ink-soft">
                         {p.card.metricLabel}
                       </span>
                     </span>
