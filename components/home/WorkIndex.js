@@ -12,10 +12,11 @@ export default function WorkIndex() {
           <h2 className="t-display rv text-[clamp(1.75rem,4vw,2.75rem)]">
             Selected work
           </h2>
-          <p className="rv mt-3 max-w-[52ch] text-ink-soft" style={{ "--ri": 1 }}>
-            Four systems, ordered by the strength of the story. Each one carries
-            an honest status stamp, because &ldquo;shipped&rdquo; and
-            &ldquo;validated&rdquo; are different claims.
+          <p className="rv mt-3 max-w-[56ch] text-ink-soft" style={{ "--ri": 1 }}>
+            Four systems I designed and tested end-to-end. Stamped with
+            honesty: some are live in production (&ldquo;Shipped&rdquo;), while
+            others are rigorously user-validated held back only by release
+            roadmaps or external blockers.
           </p>
         </Reveal>
 
