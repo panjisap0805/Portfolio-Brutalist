@@ -81,7 +81,20 @@ export default function Discovery({ section }) {
                 <h4 className="t-label text-cobalt">{col.heading}</h4>
                 <ul className="mt-2 space-y-1.5 text-[0.9375rem] leading-snug">
                   {col.items.map((item) => (
-                    <li key={item}>{item}</li>
+                    <li
+                      key={item}
+                      className={col.items.length > 1 ? "flex items-start gap-2.5" : ""}
+                    >
+                      {col.items.length > 1 && (
+                        <span
+                          aria-hidden="true"
+                          className={`mt-[5px] inline-block h-[7px] w-[7px] flex-none border-[1.5px] ${
+                            findings?.tone === "redline" ? "border-redline" : "border-cobalt"
+                          }`}
+                        />
+                      )}
+                      <span>{item}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
