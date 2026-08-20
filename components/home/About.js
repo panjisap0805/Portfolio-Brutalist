@@ -31,21 +31,22 @@ export default function About() {
           </h2>
           <div className="mt-6 max-w-[62ch] space-y-4 text-ink">
             <p className="rv" style={{ "--ri": 1 }}>
-              I started in network operations, where &ldquo;it works&rdquo; is
-              measured in uptime, not applause. That habit followed me into
-              design: I treat every screen as part of a system that has to
-              survive real operations, real staff, and real shifts.
+              My background in network operations taught me that software only
+              works if it survives real-world stress. I bring that same
+              discipline to product design. I build systems meant for real
+              shifts, heavy workloads, and complex operational flows.
             </p>
             <p className="rv" style={{ "--ri": 2 }}>
-              Most of my work lives in operational products: lending for a
-              cooperative, warehouses that never close, a two-person helpdesk
-              serving members nationwide. I run the research myself and walk
-              the floor whenever there is a floor to walk.
+              I specialize in operational and B2B products: from high-volume
+              warehouse fulfillment to cooperative fintech and internal support
+              tools. I don&rsquo;t design in isolation; I run on-ground research,
+              shadow field teams, and solve for edge cases first.
             </p>
             <p className="rv" style={{ "--ri": 3 }}>
-              I also write code. Two of the systems in this portfolio run on
-              infrastructure I deploy and maintain, which keeps my design
-              decisions honest about what engineering actually costs.
+              Because I also code and manage infrastructure, I understand
+              technical constraints before they become blockers. I design
+              solutions that are not only intuitive for users, but realistic and
+              efficient for engineering teams to build.
             </p>
           </div>
           <dl className="rv mt-8 border-t border-ink" style={{ "--ri": 4 }}>
