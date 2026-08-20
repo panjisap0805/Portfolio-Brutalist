@@ -1,5 +1,6 @@
 import RoleCycler from "@/components/ui/RoleCycler";
 import ButtonLink from "@/components/ui/ButtonLink";
+import Stamp from "@/components/ui/Stamp";
 
 const ROLES = ["UI/UX Designer", "Product Designer", "UX Researcher"];
 
@@ -8,8 +9,8 @@ export default function Hero() {
     <section className="relative">
       <div className="sheet-grid absolute inset-0" aria-hidden="true" />
       <div className="relative mx-auto max-w-[1200px] px-5 pb-16 pt-14 md:px-10 md:pb-24 md:pt-24">
-        <p className="t-label mb-8 flex flex-wrap gap-x-3 gap-y-1 text-ink-soft">
-          <span className="text-ink">Open to work</span>
+        <p className="t-label mb-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-ink-soft">
+          <Stamp label="Open to work" tone="cobalt" animate />
           <span aria-hidden="true">/</span>
           <span>Jakarta, ID</span>
           <span aria-hidden="true">/</span>

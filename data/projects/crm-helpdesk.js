@@ -31,7 +31,7 @@ const project = {
     role:
       "Everything: research with the team, design in Google Stitch, usability testing, code, and deployment to a VPS.",
     outcome:
-      "Validated with 100% of the helpdesk team. Once migrated, tooling cost drops from Rp 3M to under Rp 1M a month. Rollout waits on one OTP dependency.",
+      "Validated with 100% of the helpdesk team. Once migrated, tooling cost drops from 3 million rupiah to under 1 million rupiah a month. Rollout waits on one OTP dependency.",
     metrics: ["-70%+ tooling cost, projected", "2/2 agents tested", "Solo, design to deploy"],
   },
   sections: [
