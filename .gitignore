@@ -43,6 +43,7 @@ yarn-error.log*
 next-env.d.ts
 
 #helper
+design-concept.html
 AGENTS.md
 AGENTS copy.md
 CLAUDE.md
