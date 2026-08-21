@@ -12,11 +12,11 @@ export default function Hero() {
         <p className="t-label mb-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-ink-soft">
           <Stamp label="Open to work" tone="cobalt" animate />
           <span aria-hidden="true">/</span>
-          <span>Jakarta, ID</span>
+          <span><b>Jakarta</b>, ID</span>
           <span aria-hidden="true">/</span>
-          <span>4+ yrs</span>
+          <span><b>5+</b> YoE</span>
           <span aria-hidden="true">/</span>
-          <span>Design + code</span>
+          <span><b>Design</b> + code(AI-Assisted)</span>
         </p>
         {/*
           Sized off the longest role, not off taste: "Product Designer" is
