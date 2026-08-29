@@ -1,6 +1,6 @@
 const project = {
   slug: "warehouse-internal-freight",
-  docCode: "CS-04",
+  docCode: "CS-02",
   year: "2022",
   domain: "Logistics",
   stamp: { label: "Shipped / 2022", tone: "ink" },

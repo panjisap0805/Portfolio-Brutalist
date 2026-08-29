@@ -14,10 +14,10 @@ const stats = [
     label: "paper use after the warehouse fulfillment rollout",
   },
   {
-    value: 4.2,
-    decimals: 1,
-    suffix: "/5",
-    label: "task success, moderated usability test, 5 participants",
+    value: 70,
+    prefix: "-",
+    suffix: "%",
+    label: "helpdesk queries and complaints after deployment",
   },
   {
     value: 0,

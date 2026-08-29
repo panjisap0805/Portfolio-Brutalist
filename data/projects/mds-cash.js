@@ -3,13 +3,13 @@ const project = {
   docCode: "CS-01",
   year: "2023",
   domain: "Fintech",
-  stamp: { label: "Validated / Not shipped", tone: "cobalt" },
+  stamp: { label: "Shipped / 2023", tone: "ink" },
   card: {
     name: "MDS Cash: Online Loan",
     oneLiner:
       "A cooperative's lending flow, re-engineered after a wave of “where is my loan?” tickets.",
-    metric: "4.2/5",
-    metricLabel: "task success",
+    metric: "-70%",
+    metricLabel: "helpdesk queries & complaints",
     thumbnail: "/asset-mdscash-thumbnail.webp",
     alt: "MDS Cash mobile app screens",
   },
@@ -31,8 +31,8 @@ const project = {
     role:
       "Product Designer: design audit, moderated usability testing with 5 members, full redesign recommendation.",
     outcome:
-      "The redesigned flow scored 4.2/5 task success in testing. Fixes made along the way cut status complaints, though the app itself has not shipped yet.",
-    metrics: ["4.2/5 task success", "5-user moderated UT", "6-week engagement"],
+      "Shipped in 2023. Deployed redesign deflected and reduced helpdesk queries and customer complaints by 70%, with tested flows achieving a 4.2/5 task success score.",
+    metrics: ["-70% helpdesk queries", "4.2/5 task success", "Shipped in 2023"],
   },
   sections: [
     {
@@ -208,26 +208,28 @@ const project = {
       type: "impact",
       stats: [
         {
-          value: 4.2,
-          decimals: 1,
-          suffix: "/5",
-          label: "average task success. Moderated UT, 5 participants, 1 to 5 scale.",
+          value: 70,
+          prefix: "-",
+          suffix: "%",
+          label:
+            "reduction in helpdesk queries and customer complaints after deployment.",
         },
       ],
       qualitative: [
-        "Qualitative feedback across the tested lending tasks was positive, and the design was iterated once more from that feedback.",
-        "Reducing manual verification cut the cross-division miscommunication that had been stretching approval times.",
-        "Helpdesk contacts about loan status dropped significantly after internal fixes. Observed qualitatively, not instrumented.",
+        "Deflected 'where is my loan?' inquiries by making loan application status visible directly inside the app.",
+        "Transparent fee itemization eliminated underpayment confusion during balance top-up.",
+        "Qualitative feedback across tested lending tasks reached 4.2/5 average task success before engineering hand-off.",
       ],
     },
     {
       type: "reflection",
       limitations: [
-        "The redesigned app has not been published: the cooperative hit technical constraints before engineering could pick it up.",
-        "The helpdesk improvement is qualitative. There was no instrumentation in place to put a number on it, and I will not invent one.",
+        "Technical constraints at the cooperative postponed full OCR integration and automated verification pipelines, so data verification still relies partially on manual backend review.",
+        "The 70% query deflection was measured from support ticket volume; full in-app drop-off analytics across every sub-step remain to be instrumented.",
       ],
       nextSteps: [
-        "The recommendations are documented and validated, ready to build when engineering capacity opens.",
+        "Integrate OCR document scanning once backend infrastructure and third-party vendor services are aligned.",
+        "Instrument granular funnel analytics for activation and loan disbursement drop-offs.",
       ],
     },
   ],

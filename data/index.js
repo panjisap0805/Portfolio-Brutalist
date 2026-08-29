@@ -1,14 +1,13 @@
 import mdsCash from "./projects/mds-cash";
+import warehouseInternalFreight from "./projects/warehouse-internal-freight";
 import warehouseFulfillment from "./projects/warehouse-fulfillment";
 import crmHelpdesk from "./projects/crm-helpdesk";
-import warehouseInternalFreight from "./projects/warehouse-internal-freight";
 
-/** Ordered by story strength (IMPLEMENTATION_PLAN.md §2.2), not by calendar. */
 export const projects = [
   mdsCash,
+  warehouseInternalFreight,
   warehouseFulfillment,
   crmHelpdesk,
-  warehouseInternalFreight,
 ];
 
 export const projectSlugs = projects.map((p) => p.slug);

@@ -1,6 +1,6 @@
 const project = {
   slug: "crm-helpdesk",
-  docCode: "CS-03",
+  docCode: "CS-04",
   year: "2026",
   domain: "Helpdesk ops",
   stamp: { label: "Validated / Pending OTP", tone: "cobalt" },
