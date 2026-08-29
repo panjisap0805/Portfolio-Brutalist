@@ -39,9 +39,28 @@ export const metadata = {
     shortcut: "/asset-favicon.ico",
   },
   openGraph: {
+    title: "Panji Saputro, Product Designer who ships",
+    description:
+      "Product designer in Jakarta turning messy operational reality into working systems: research, flows, and code deployed by the same pair of hands.",
+    url: "https://panjisaputro.id",
     siteName: "Panji Saputro",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Panji Saputro — Product Designer who ships",
+      },
+    ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Panji Saputro, Product Designer who ships",
+    description:
+      "Product designer in Jakarta turning messy operational reality into working systems: research, flows, and code deployed by the same pair of hands.",
+    images: ["/og-image.jpg"],
   },
 };
 

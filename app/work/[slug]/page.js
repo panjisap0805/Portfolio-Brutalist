@@ -22,6 +22,12 @@ export async function generateMetadata({ params }) {
       description: project.tldr.outcome,
       images: [{ url: project.card.thumbnail }],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.card.name}, a case study by Panji Saputro`,
+      description: project.tldr.outcome,
+      images: [project.card.thumbnail],
+    },
   };
 }
 
