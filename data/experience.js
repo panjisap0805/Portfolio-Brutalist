@@ -66,6 +66,31 @@ export const experiences = [
     ],
   },
   {
+    id: "pkub-kemenag",
+    company: "Pusat Kerukunan Umat Beragama (PKUB) — Kemenag RI",
+    role: "Freelance UI/UX Designer",
+    period: "2021 — 2025",
+    location: "Jakarta, Indonesia",
+    domain: "GovTech / Public Sector",
+    stamp: { label: "Freelance", tone: "cobalt" },
+    summary:
+      "Delivered 7 digital products over 4 years for a national government institution, replacing paper-based administrative workflows with online platforms and reducing manual processing overhead.",
+    highlights: [
+      {
+        metric: "7 Digital Products",
+        text: "Delivered 7 digital products over 4 years for a national government institution, replacing paper-based administrative workflows with online platforms and reducing manual processing overhead.",
+      },
+      {
+        metric: "Interfaith & Scale",
+        text: "Designed accessible, scalable platforms supporting interfaith communication, transparency, and proactive engagement between communities, employees, and government stakeholders.",
+      },
+      {
+        metric: "End-to-End Delivery",
+        text: "Managed each engagement independently — from stakeholder requirement gathering through delivery — while ensuring compliance with organizational and regulatory needs.",
+      },
+    ],
+  },
+  {
     id: "skilvul",
     company: "Skilvul",
     role: "UI/UX Designer Intern",
