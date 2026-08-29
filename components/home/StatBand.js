@@ -3,7 +3,7 @@ import CountUp from "@/components/ui/CountUp";
 
 const stats = [
   {
-    value: 4,
+    value: 5,
     suffix: "+",
     label: "years across fintech and e-commerce operations",
   },

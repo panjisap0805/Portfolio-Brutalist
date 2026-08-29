@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const links = [
   { href: "/#work", label: "Work" },
+  { href: "/#experience", label: "Experience" },
   { href: "/#about", label: "About" },
   { href: "/#contact", label: "Contact" },
 ];
@@ -20,7 +21,7 @@ export default function SiteHeader() {
           Panji Saputro
         </Link>
         <nav aria-label="Site">
-          <ul className="flex items-center gap-[clamp(0.625rem,3vw,1.5rem)] md:gap-8">
+          <ul className="flex items-center gap-[clamp(0.5rem,2vw,1.5rem)] md:gap-8">
             {links.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="t-label link-draw text-ink-soft hover:text-ink">

@@ -2,6 +2,7 @@ import Hero from "@/components/home/Hero";
 import Ticker from "@/components/ui/Ticker";
 import WorkIndex from "@/components/home/WorkIndex";
 import StatBand from "@/components/home/StatBand";
+import Experience from "@/components/home/Experience";
 import About from "@/components/home/About";
 import ContactCTA from "@/components/home/ContactCTA";
 
@@ -25,6 +26,7 @@ export default function HomePage() {
       <Ticker items={skills} />
       <WorkIndex />
       <StatBand />
+      <Experience />
       <About />
       <ContactCTA />
     </>
